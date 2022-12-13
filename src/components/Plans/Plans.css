@@ -1,0 +1,87 @@
+.plans-container {
+  margin-top: -4rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.plans {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.pln {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-color: #d23369;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 15rem;
+  color: white;
+}
+
+.pln:nth-child(2) {
+  transform: scale(1.1);
+  background-color: #d23369;
+}
+
+.pln > svg {
+  fill: #fce2db;
+}
+.pln > :nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.pln > :nth-child(3) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.pln > :nth-child(5) {
+  font-size: 0.8rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whiteTick {
+  width: 1rem;
+}
+
+.blur-p-1 {
+  width: 32rem;
+  height: 22rem;
+  left: 0;
+  top: 10rem;
+}
+
+.blur-p-2 {
+  width: 32rem;
+  height: 22rem;
+  right: 0;
+  top: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .plans>:nth-child(2){
+    transform: none;
+  }
+}
